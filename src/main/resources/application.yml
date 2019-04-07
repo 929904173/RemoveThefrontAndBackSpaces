@@ -1,0 +1,22 @@
+server:
+ port: 8088
+spring:
+ http:
+  encoding:
+   charset: Utf-8 
+ mvc:
+  static-path-pattern: /img/**
+ resources:
+  static-locations: file:///E:/dscmgzj/dscm/dscm/src/webapp/img/
+ datasource: 
+  url: jdbc:mysql://localhost/cx?useUnicode=true&characterEncoding=utf8&serverTimezone=GMT%2B8&useSSL=false
+  username: root
+  password: root
+  schema:
+  driver-class-name: com.mysql.jdbc.Driver
+ jpa:
+  show-sql: true
+  hibernate:
+   ddl-auto: update
+  database-platform: org.hibernate.dialect.MySQL5InnoDBDialect 
+      
